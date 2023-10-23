@@ -1,8 +1,17 @@
 from django.shortcuts import render
 
-# Create your views here.
+# mainpage
 def mainpage(request):
     return render(request, 'pages/mainpage.html')
 
-def company(request):
-    return render(request, 'pages/company_info.html')
+# about
+def company_info(request):
+    return render(request, 'pages/about/info.html')
+
+def company_mission(request):
+    return render(request, 'pages/about/vision-mission.html')
+
+def company_map(request):
+    return render(request, 'pages/about/map.html')
+
+#about
