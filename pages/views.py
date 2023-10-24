@@ -14,4 +14,16 @@ def company_mission(request):
 def company_map(request):
     return render(request, 'pages/about/map.html')
 
-#about
+# support
+def support_inquiry(request):
+    return render(request, 'pages/support/inquiry.html')
+
+def support_feedback(request):
+    return render(request, 'pages/support/feedback.html')
+
+# faqs
+def faqs_company(request):
+    return render(request, 'pages/faqs/company.html')
+
+def faqs_product(request):
+    return render(request, 'pages/faqs/product.html')

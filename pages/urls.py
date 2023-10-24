@@ -21,7 +21,17 @@ from . import views
 
 urlpatterns = [
     path('', views.mainpage),
+
+    # about
     path('about/info/', views.company_info),
     path('about/map/', views.company_map),
     path('about/vision-mission/', views.company_mission),
+
+    # support
+    path('support/inquiry/', views.support_inquiry),
+    path('support/feedback/', views.support_feedback),
+
+    # faqs
+    path('faqs/company/', views.faqs_company),
+    path('faqs/product/', views.faqs_product),
 ]
